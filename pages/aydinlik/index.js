@@ -6,7 +6,7 @@ const Aydinlik = ({ data }) => {
 	return (
 		<div className="bg-white">
 			<Navbar />
-			<div className="flex justify-center items-center mt-24 mb-24">
+			<div className="flex justify-center items-center mt-24 mb-24 bg-white">
 				<div className="grid gap-3 sm:gap-8 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 ">
 					{data.map(news => {
 						return (

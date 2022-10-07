@@ -15,7 +15,7 @@ const NewsDetail = content => {
 	return (
 		<div className="bg-white">
 			<Navbar />
-			<div className="w-full flex justify-center items-center my-12 sm:my-24">
+			<div className="w-full flex justify-center items-center my-12 sm:my-24 bg-white">
 				<div className="w-11/12 xl:w-6/12 border px-2 sm:px-8 py-16 flex flex-col justify-center items-center">
 					<div className="w-full sm:w-11/12 h-[30vh] sm:h-[50vh] relative">
 						<Image
