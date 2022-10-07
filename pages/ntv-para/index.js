@@ -23,8 +23,9 @@ const NtvPara = ({ data }) => {
 	);
 };
 export async function getServerSideProps(context) {
-	const res = await fetch("http://localhost:8000/ntv-para");
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/ntv-para`);
 	const json = await res.json();
+	console.log(json);
 	return {
 		props: { data: json }, // will be passed to the page component as props
 	};

@@ -23,7 +23,7 @@ const Aydinlik = ({ data }) => {
 	);
 };
 export async function getServerSideProps(context) {
-	const res = await fetch("http://localhost:8000/aydinlik");
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/aydinlik`);
 	const json = await res.json();
 	return {
 		props: { data: json }, // will be passed to the page component as props

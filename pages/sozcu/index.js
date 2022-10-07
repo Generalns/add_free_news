@@ -1,8 +1,6 @@
 import NewsCard from "../../components/NewsCard";
 import Navbar from "../../components/Navbar";
 const Sozcu = ({ data }) => {
-	console.log(data);
-
 	return (
 		<>
 			<Navbar />
@@ -24,7 +22,7 @@ const Sozcu = ({ data }) => {
 };
 
 export async function getServerSideProps(context) {
-	const res = await fetch("http://localhost:8000/sozcu");
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/sozcu`);
 	const json = await res.json();
 	return {
 		props: { data: json }, // will be passed to the page component as props

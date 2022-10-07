@@ -11,7 +11,7 @@ export default function Navbar() {
 				<meta name="description" content="Add Free News" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<nav className="w-full bg-gray-800 shadow fixed top-0">
+			<nav className="z-10 w-full bg-gray-800 shadow fixed top-0">
 				<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
