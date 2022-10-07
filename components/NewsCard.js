@@ -17,7 +17,9 @@ const NewsCard = ({ img, title, url }) => {
 						</div>
 					)}
 					<div className="p-1 sm:px-4 w-full py-3 sm:py-4 flex justify-center items-center">
-						<p className="text-sm sm:text-2xl   w-full text-center">{title}</p>
+						<p className="text-sm sm:text-2xl   w-full text-black text-center">
+							{title}
+						</p>
 					</div>
 				</a>
 			</Link>

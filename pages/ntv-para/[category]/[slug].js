@@ -12,7 +12,7 @@ const NewsDetail = content => {
 		}
 	}, []);
 	return (
-		<>
+		<div className="bg-white">
 			<Navbar />
 			<div className="w-full flex justify-center items-center my-12 sm:my-24">
 				<div className="w-11/12 xl:w-6/12 border px-2 sm:px-8 py-16 flex flex-col justify-center items-center">
@@ -24,16 +24,16 @@ const NewsDetail = content => {
 							alt="News Image"
 						></Image>
 					</div>
-					<p className="text-center text-2xl sm:text-3xl my-8 w-11/12">
+					<p className="text-center text-2xl sm:text-3xl my-8 w-11/12 text-black">
 						{content.title}
 					</p>
 					<div
-						className="w-10/12 text-justify content text-sm sm:text-lg"
+						className="w-10/12 text-justify content text-sm sm:text-lg text-white"
 						dangerouslySetInnerHTML={{ __html: content.content }}
 					></div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
