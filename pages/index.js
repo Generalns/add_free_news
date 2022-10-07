@@ -6,9 +6,9 @@ import NewspaperCard from "../components/NewspapersCard";
 
 export default function Home() {
 	return (
-		<div className="bg-white w-full flex flex-col justify-center items-center h-screen px-8 overscroll-y-none">
+		<div className="bg-white w-full flex flex-col justify-center items-center  px-8 ">
 			<Navbar />
-			<div className="mt-24 sm:my-12 sm:my-24 grid gap-8 grid-cols-2 sm:grid-cols-4 ">
+			<div className="my-24 mt-28 sm:mt-24 grid gap-8 grid-cols-2 sm:grid-cols-4 ">
 				<Link href={"/aydinlik"}>
 					<a>
 						<NewspaperCard title={"Aydınlık"} image={"/images/aydinlik.jpg"} />
