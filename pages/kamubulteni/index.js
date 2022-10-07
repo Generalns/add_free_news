@@ -1,5 +1,6 @@
 import NewsCard from "../../components/NewsCard";
 import Navbar from "../../components/Navbar";
+import { NextScript } from "next/document";
 const KamuBulteni = ({ data }) => {
 	console.log(data);
 
@@ -11,6 +12,7 @@ const KamuBulteni = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
+								keys={NextScript.url}
 								title={news.title}
 								img={news.img}
 								url={"/kamubulteni/" + news.url}

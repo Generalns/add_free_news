@@ -11,6 +11,7 @@ const NtvPara = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
+								key={news.url}
 								title={news.title}
 								img={news.img}
 								url={"/ntv-para/" + news.url}

@@ -11,6 +11,7 @@ const Karar = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
+								key={news.url}
 								title={news.title}
 								img={news.img}
 								url={"/karar/" + news.url}

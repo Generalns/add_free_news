@@ -11,6 +11,7 @@ const Hurriyet = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
+								key={news.url}
 								title={news.title}
 								img={news.img}
 								url={"/hurriyet/" + news.url}

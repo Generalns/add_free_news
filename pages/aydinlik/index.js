@@ -11,6 +11,7 @@ const Aydinlik = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
+								key={news.url}
 								title={news.title}
 								img={"https://img.aydinlik.com.tr/rcman" + news.img}
 								url={"/aydinlik/" + news.url}
