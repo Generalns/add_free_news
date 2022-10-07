@@ -7,15 +7,19 @@ const KamuBulteni = ({ data }) => {
 		<div className="bg-white">
 			<Navbar />
 			<div className="flex justify-center items-center mt-24 mb-24 bg-white">
-				<div className="grid gap-3 sm:gap-8 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 ">
+				<div className="grid gap-3 sm:gap-8 bg-white xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 ">
 					{data.map(news => {
 						return (
-							<NewsCard
+							<div
+								className="flex flex-col justify-center items-center sm:block"
 								key={news.url}
-								title={news.title}
-								img={news.img}
-								url={"/kamubulteni/" + news.url}
-							/>
+							>
+								<NewsCard
+									title={news.title}
+									img={news.img}
+									url={"/kamubulteni/" + news.url}
+								/>
+							</div>
 						);
 					})}
 				</div>

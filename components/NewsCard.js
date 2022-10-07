@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 const NewsCard = ({ img, title, url }) => {
 	return (
-		<div className="rounded-2xl bg-slate-200 overflow-hidden w-40 sm:w-80 ">
+		<div className="rounded sm:rounded-lg bg-slate-200 overflow-hidden  w-11/12 h-full sm:w-80 ">
 			<Link href={url}>
-				<a>
+				<a className="sm:block flex">
 					{!img.includes("undefined") && !img.includes(".gif") && (
 						<div className="w-full h-24 sm:h-48 relative">
 							<Image

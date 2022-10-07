@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Navbar() {
 	const [navbar, setNavbar] = useState(false);
 	return (
-		<div>
+		<div className="bg-white">
 			<Head>
 				<title>Add Free News</title>
 				<meta name="description" content="Add Free News" />
