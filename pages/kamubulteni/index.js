@@ -11,7 +11,7 @@ const KamuBulteni = ({ data }) => {
 					{data.map(news => {
 						return (
 							<NewsCard
-								keys={news.url}
+								key={news.url}
 								title={news.title}
 								img={news.img}
 								url={"/kamubulteni/" + news.url}
