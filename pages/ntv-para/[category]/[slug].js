@@ -28,7 +28,7 @@ const NewsDetail = content => {
 						{content.title}
 					</p>
 					<div
-						className="w-10/12 text-justify content text-sm sm:text-lg text-white"
+						className="w-10/12 text-justify content text-sm sm:text-lg text-black"
 						dangerouslySetInnerHTML={{ __html: content.content }}
 					></div>
 				</div>
