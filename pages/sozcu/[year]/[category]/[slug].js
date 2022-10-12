@@ -22,6 +22,7 @@ const NewsDetail = content => {
 							layout="fill"
 							objectFit="cover"
 							alt="News Image"
+							unoptimized
 						></Image>
 					</div>
 					<p className="text-center text-2xl sm:text-3xl my-8 w-11/12 text-black">

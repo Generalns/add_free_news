@@ -13,6 +13,7 @@ const NewsCard = ({ img, title, url }) => {
 								objectFit="cover"
 								loading="lazy"
 								alt="news-img"
+								unoptimized
 							></Image>
 						</div>
 					)}

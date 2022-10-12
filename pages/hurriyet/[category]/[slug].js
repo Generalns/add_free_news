@@ -4,6 +4,7 @@ import styles from "../../../styles/Newsdetail.module.css";
 import Navbar from "../../../components/Navbar";
 const NewsDetail = content => {
 	content = content.content;
+	console.log("CONTENT", content);
 	useEffect(() => {
 		const content = document.querySelectorAll(".content p");
 		console.log(content);
@@ -22,6 +23,7 @@ const NewsDetail = content => {
 							layout="fill"
 							objectFit="cover"
 							alt="News Image"
+							unoptimized
 						></Image>
 					</div>
 					<p className="text-center text-2xl sm:text-3xl my-8 w-11/12 text-black">
@@ -50,7 +52,6 @@ export async function getStaticPaths() {
 			},
 		};
 	});
-	console.log("URLSs", urls);
 	return {
 		paths: urls,
 		fallback: "blocking",
